@@ -1,0 +1,76 @@
+/* Contenedor principal */
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Imagen sobre la barra */
+  .navbar-image img {
+    width: 40%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+  }
+  
+  /* Logo */
+  .navbar-logo{
+    width: 20%;
+    object-fit: cover;
+  }
+
+  .navbar-logo img{
+    width: 15%;
+    height: auto;
+    max-height: 65px;
+    object-fit: cover;
+  }
+  
+  /* Enlaces */
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links li a:hover {
+    color: #00d1b2;
+  }
+  
+  /* Botón */
+  .navbar-actions .btn {
+    background-color: #00d1b2;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-actions .btn:hover {
+    background-color: #00997c;
+  }
