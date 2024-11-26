@@ -1,1 +1,43 @@
-<p>index-2 works!</p>
+<div class="form-container">
+    <form>
+      <div class="form-group">
+        <label for="nombre">Estado del Servicio <div class="obvio">*</div></label>
+        <select id="documento" name="documento">
+            <option value="" disabled selected>Seleccione</option>
+            <option>Activo</option>
+            <option>Suspendido</option>
+            <option>Cancelado</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="nombre">Estado del Cliente <div class="obvio">*</div></label>
+        <select id="documento" name="documento">
+            <option value="" disabled selected>Seleccione</option>
+            <option>Activo</option>
+            <option>Suspendido</option>
+            <option>Cancelado</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="apellido">Estrato <div class="obvio">*</div></label>
+        <input type="text" id="apellido" placeholder="Ingresa tu Estrato" />
+      </div>
+  
+      <div class="form-group">
+        <label for="celularFijo">Fecha de Inicio</label>
+        <input type="date" id="celularFijo" placeholder="Ingresa la Fecha de Inicio de Operación" />
+      </div>
+  
+      <div class="form-group">
+        <label for="celularFijo">Fecha de Fin</label>
+        <input type="date" id="celularFijo" placeholder="Ingresa la Fecha de Finalización de Operación" />
+      </div>
+  
+      <!-- Botón de Enviar -->
+      <button type="submit" (click)="Siguiente()">Siguiente</button>
+      <hr>
+      <button type="submit" (click)="Atras()">Atrás</button>
+    </form>
+  </div>
